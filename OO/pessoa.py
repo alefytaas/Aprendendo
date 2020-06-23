@@ -16,3 +16,8 @@ if __name__ == '__main__':
     print(id(alefy))
     for filho in cineide.filhos:
         print(filho.nome)
+    cineide.sobrenome = 'Mesquita'
+    del cineide.filhos
+    print(cineide.sobrenome)
+    print(cineide.__dict__)
+    print(alefy.__dict__)
