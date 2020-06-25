@@ -31,3 +31,5 @@ if __name__ == '__main__':
     print(carro.calcular_velocidade())
     carro.girar_direita()
     print(carro.calcular_direcao())
+    carro.motor.acelerar()
+
