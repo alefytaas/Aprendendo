@@ -15,11 +15,19 @@ class Pessoa:
     @classmethod
     def nome_e_atributos_de_classe(cls):
         return f'{cls} olhos {cls.olhos}'
-if __name__ == '__main__':
-    alefy = Pessoa(nome='Alefy')
-    thaisa= Pessoa(nome='Thaisa')
-    cineide = Pessoa(alefy, thaisa, nome='Cineide')
 
+class Homem(Pessoa):
+    pass
+
+
+
+if __name__ == '__main__':
+    alefy = Homem(nome='Alefy')
+    thaisa= Pessoa(nome='Thaisa')
+    talles = Pessoa(nome='Talles')
+    cineide = Pessoa(alefy, thaisa, talles, nome='Cineide')
+
+    print(isinstance(alefy, Pessoa))
     print(Pessoa.cumprimentar(alefy))
     print(id(alefy))
     for filho in cineide.filhos:
